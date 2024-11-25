@@ -1,6 +1,6 @@
 import React from "react";
 
-function Search() {
+function Search({Input}) {  
   return (
     <div className="mt-3 bg-gray-50">
       <form className="max-w-md mx-auto">
@@ -30,13 +30,8 @@ function Search() {
             </svg>
           </div>
           {/* Search Input */}
-          <input
-            type="search"
-            id="default-search"
-            className="block w-full p-4 ps-12 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 shadow-sm focus:ring-blue-500 focus:border-blue-500 focus:shadow-md transition-all duration-200"
-            placeholder="Search..."
-            required=""
-          />
+          {Input}
+
           {/* Search Button */}
           <button
             type="submit"
